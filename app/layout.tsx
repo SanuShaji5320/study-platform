@@ -1,30 +1,10 @@
-import { Inter } from "next/font/google";
-import { cn } from "@/lib/utils";
+<nav className="bg-white border-b px-6 py-4 flex justify-between items-center">
+  <h1 className="text-xl font-bold">StudySmart</h1>
 
-const inter = Inter({subsets:['latin'],variable:'--font-sans'});
-
-
-export default function RootLayout({ children }: { children: React.ReactNode }) {
-  return (
-    <html lang="en" className={cn("font-sans", inter.variable)}>
-      <body className="bg-gray-100">
-
-        {/* Navbar */}
-        <nav className="bg-white shadow p-4 flex justify-between">
-          <h1 className="font-bold">Study Platform</h1>
-
-          <div className="flex gap-4">
-            <a href="/">Home</a>
-            <a href="/syllabus">Syllabus</a>
-            <a href="/subjects">Materials</a>
-            <a href="/mock-test">Practice</a>
-          </div>
-        </nav>
-
-        {/* Page Content */}
-        {children}
-
-      </body>
-    </html>
-  );
-}
+  <div className="flex gap-6 text-sm font-medium">
+    <a href="/" className="hover:text-blue-600">Home</a>
+    <a href="/syllabus" className="hover:text-blue-600">Syllabus</a>
+    <a href="/subjects" className="hover:text-blue-600">notes</a>
+    <a href="/mock-test" className="hover:text-blue-600">Practice</a>
+  </div>
+</nav>
