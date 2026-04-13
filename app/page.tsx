@@ -9,7 +9,7 @@ export default function Home() {
     {
       title: "Study Materials",
       desc: "Access notes, PDFs, and resources",
-      link: "/subjects",
+      link: "/notes",
       color: "bg-purple-500",
     },
     {
